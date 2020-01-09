@@ -1,5 +1,7 @@
 import java.util.ArrayList;
-class Student{
+import java.util.Iterator;
+
+class Student {
     int roll;
     String name;
 
@@ -78,6 +80,26 @@ public class ListDemo {
             System.out.println(list1.get(i));
         }
         System.out.println("--------=--------------------");
+
+        System.out.println("-------Iterating using Iterator Api---------------");
+        // Display the next element in the list using iterator api
+        Iterator<String> itr = list1.iterator();
+//            System.out.println(itr.next());
+//            System.out.println(itr.next());
+
+
+        // To display all the list yopu need to use the hasNext methode of Iterator:
+
+        while (itr.hasNext()) {
+            String str = itr.next();
+            System.out.println(str);
+            if (str.equals("Souad")) {
+                itr.remove();
+            }
+        }
+        System.out.println("List1 after iteration " + list1);
+        System.out.println("--------=--------------------");
+
 
     }
 }
