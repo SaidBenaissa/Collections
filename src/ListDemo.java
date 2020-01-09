@@ -61,16 +61,23 @@ public class ListDemo {
 
 //  6. to know if an elements exist in the list
 
-        if(list1.contains("Souad")){
-            System.out.println("Souad is in the list "+list1);
-        }else {
-            System.out.println("Souad is NOT in the list "+list1);
-
+        if (list1.contains("Souad")) {
+            System.out.println("Souad is in the list " + list1);
+        } else {
+            System.out.println("Souad is NOT in the list " + list1);
         }
 //  7. Iterate in the ArrayList
-        for (String str:list1){
+        System.out.println("-------Iterating using enhanced For Loop---------------");
+        for (String str : list1) {
             System.out.println(str);
         }
+        System.out.println("--------=--------------------");
+
+        System.out.println("-------Iterating using For Loop---------------");
+        for (int i = 0; i < list1.size(); i++) {
+            System.out.println(list1.get(i));
+        }
+        System.out.println("--------=--------------------");
 
     }
 }
