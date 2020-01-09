@@ -67,6 +67,10 @@ public class ListDemo {
             System.out.println("Souad is NOT in the list "+list1);
 
         }
+//  7. Iterate in the list
+        for (String str:list1){
+            System.out.println(str);
+        }
 
     }
 }
